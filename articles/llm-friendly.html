@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>企业怎么写"AI 友好"的内容？</title>
+  <meta name="description" content="LLM-friendly 内容=机器能读懂、能准确归纳、愿意引用的内容。核心三件事：清晰小标题直接给答案、FAQ写成标准问答、页面加JSON-LD结构化数据。" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "企业怎么写 AI 友好的内容？",
+    "author": { "@type": "Person", "name": "赖先生" },
+    "publisher": { "@type": "Organization", "name": "东莞市若云科技有限公司" },
+    "about": "LLM-friendly内容写法"
+  }
+  </script>
+</head>
+<body>
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo">若云<span>科技</span></a>
+      <button class="nav__toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav__menu" id="navMenu" aria-label="主导航">
+        <a href="../index.html">首页</a>
+        <a href="../cases.html">案例</a>
+        <a href="../pricing.html">价格</a>
+        <a href="../news.html">资讯</a>
+        <a href="index.html">文章</a>
+        <a href="../index.html#contact" class="nav__cta">联系我</a>
+      </nav>
+    </div>
+  </header>
+
+  <article class="post">
+    <div class="container">
+      <div class="post__hero">
+        <p class="breadcrumb"><a href="../index.html">首页</a> / <a href="index.html">文章</a> / GEO 类</p>
+        <p class="post__cat">GEO 内容写法 · GEO 类</p>
+        <h1 class="post__title">企业怎么写"AI 友好"的内容？</h1>
+        <p class="post__lead"><strong>LLM-friendly 内容 = 机器能读懂、能准确归纳、愿意引用的内容。</strong>核心三件事：用清晰的小标题直接给答案、把 FAQ 写成标准问答、给页面加结构化数据（JSON-LD）。</p>
+      </div>
+
+      <div class="post__body">
+        <h2>一、标题与首句，直接给答案</h2>
+        <p>AI 引用内容时，优先抓"问题—答案"结构。文章标题用客户真实会搜的完整问句（如"工厂抖音代运营多少钱"），首段第一句就给结论，再展开。别绕弯子、别留悬念——AI 和人都讨厌。</p>
+
+        <h2>二、FAQ 写成标准问答</h2>
+        <p>把客户常问的问题，用"问：/ 答："或 H3 问题+段落答案的形式列出。这种结构 AI 最喜欢抓取当"现成答案"。一篇文 3–5 个 FAQ 即可，覆盖核心疑问。</p>
+
+        <h2>三、加 JSON-LD 结构化数据</h2>
+        <p>在页面埋 schema.org 的 Article / Organization / FAQPage 结构化数据，等于给 AI 一份"内容说明书"：这篇讲什么、谁写的、属于哪家公司。识别越准，被引概率越高。</p>
+
+        <h2>四、多平台一致铺设</h2>
+        <p>同一核心信息（公司名、业务、地域）在官网、文章、百家/知乎/头条等平台保持表述一致。AI 靠"多处一致"判断你可信。今天叫A明天叫B，权重就散了。</p>
+
+        <div class="callout">
+          <strong>误区：</strong>LLM-friendly 不是"堆专业术语"。恰恰相反，是用大白话把专业事讲清楚、结构分明，机器和人都能一眼抓到重点。
+        </div>
+
+        <div class="faq">
+          <h2>常见疑问</h2>
+          <div class="faq__item">
+            <h3>是不是要堆很多专业词？</h3>
+            <p>不用，而且要克制。清晰、准确、结构分明比堆词重要。生硬堆词反而降低可读性，AI 也不爱引。</p>
+          </div>
+          <div class="faq__item">
+            <h3>一篇文能覆盖多少意图？</h3>
+            <p>一篇聚焦一个核心意图词（一个问题），但可在 FAQ 和正文自然覆盖 2–3 个相关长尾。别贪多，一篇说清一件事最稳。</p>
+          </div>
+        </div>
+
+        <div class="related">
+          <h3>相关阅读</h3>
+          <a href="geo-shi-me-shi.html">GEO 是什么？怎么让豆包、DeepSeek 推荐你的工厂</a>
+          <a href="deepseek-tui-jian.html">怎么让 DeepSeek 在回答时推荐我的工厂？</a>
+          <a href="geo-vs-seo.html">GEO 和 SEO，工厂应该先做哪个？</a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> 东莞市若云科技有限公司（抖音「小赖的运营笔记」运营主体）</span>
+      <span><a href="../index.html" style="color:inherit;">返回首页</a></span>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>

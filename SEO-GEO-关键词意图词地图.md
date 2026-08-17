@@ -28,42 +28,55 @@
 - 若云科技 工厂代运营 / 若云科技 GEO优化 / 若云科技 抖音获客
 - 实体一致要求：全站标题 / 描述 / JSON-LD / 页脚统一用「东莞市若云科技有限公司」，AI 抓取时才认得是同一家，推荐权重才叠得上
 
-## 三、待生成意图词（按批次铺，用户可点单）
+## 三、意图词生成进度（已全部生成 ✅ 共 29 篇）
 
-**信息类补充**
-- 工厂抖音和百度竞价哪个划算
-- 为什么工厂要做老板IP
-- 制造业短视频为什么难做起来
+> 截至 2026-08-17，意图词地图中的待生成词已全部铺完。每篇均为 AEO 问答体 + E-E-A-T + 内链互通 + JSON-LD 结构化，可被搜索引擎与 AI 同时抓取。
 
-**操作类补充**
-- 工厂抖音怎么做搜索流量（SEO布局）
-- 工厂蓝V怎么认证、有什么用
-- 工厂矩阵账号怎么搭（老板号+员工号）
-- 工厂私信话术怎么写
+**信息类（4 篇）**
+- 有播放没客户 → `you-bo-fang-mei-ke-hu.html` ✅
+- 抖音 vs 百度竞价 → `dou-yin-vs-baidu.html` ✅
+- 为什么做老板 IP → `wei-shen-me-lao-ban-ip.html` ✅
+- 为什么难做起来 → `wei-shen-me-nan-zuo.html` ✅
 
-**推荐类补充**
-- 东莞/佛山/深圳 工厂抖音代运营哪家好（地域词）
-- 代运营和自建团队怎么选
-- 短视频代运营合同要注意什么
+**操作类（5 篇）**
+- 从 0 到 1 起号 → `cong-0-dao-1.html` ✅
+- 搜索流量布局 → `sou-suo-liu-liang.html` ✅
+- 蓝 V 认证 → `lan-v.html` ✅
+- 矩阵账号 → `ju-zhen-zhang-hao.html` ✅
+- 私信话术 → `si-xin-hua-shu.html` ✅
 
-**价格类补充**
-- 代运营对赌模式靠谱吗
-- 投流费用一般多少
+**推荐类（4 篇）**
+- 代运营怎么选 → `dai-yun-ying-zen-me-xuan.html` ✅
+- 地域代运营对比 → `di-yu-dai-yun-ying.html` ✅
+- 代运营 vs 自建 → `dai-yun-ying-vs-zi-jian.html` ✅
+- 合同注意 → `he-tong-zhu-yi.html` ✅
 
-**GEO类补充**
-- 怎么让DeepSeek搜到我的工厂
-- 企业怎么写LLM-friendly内容
-- GEO和SEO哪个先做
+**价格类（3 篇）**
+- 代运营多少钱 → `dai-yun-ying-duo-shao-qian.html` ✅
+- 对赌模式 → `dui-du-mo-shi.html` ✅
+- 投流费用 → `tou-liu-fei-yong.html` ✅
 
-**行业类（每个行业一篇深度）**
-- 模具/注塑厂怎么获客
-- 五金冲压厂怎么获客
-- 机械/设备厂怎么获客
-- 包装/印刷厂怎么获客
-- 电子/3C厂怎么获客
-- 食品厂怎么获客
-- 建材/家居厂怎么获客
-- 化工/材料厂怎么获客
+**GEO 类（4 篇）**
+- GEO 是什么 → `geo-shi-me-shi.html` ✅
+- DeepSeek 推荐 → `deepseek-tui-jian.html` ✅
+- LLM-friendly 内容 → `llm-friendly.html` ✅
+- GEO vs SEO → `geo-vs-seo.html` ✅
+
+**行业类（9 篇）**
+- 总览 → `ge-hang-ye-da-fa.html` ✅
+- 模具/注塑 → `mu-ju.html` ✅
+- 五金冲压 → `wu-jin.html` ✅
+- 机械/设备 → `ji-xie.html` ✅
+- 包装/印刷 → `bao-zhuang.html` ✅
+- 电子/3C → `dian-zi.html` ✅
+- 食品 → `shi-pin.html` ✅
+- 建材/家居 → `jian-cai.html` ✅
+- 化工/材料 → `hua-gong.html` ✅
+
+**后续可继续扩展（长尾）**
+- 各行业的"搜索流关键词"深挖（如"东莞模具厂哪家好"地域+行业长尾）
+- 真实客户案例页（需赖先生提供可公开素材）
+- 问答 FAQ 聚合页（FAQPage 结构化，强化 GEO 被引）
 
 ## 四、生成 SOP（每篇通用）
 

@@ -678,10 +678,29 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer__inner">
-      <span>© 2026 东莞市若云科技有限公司（抖音「小赖还不赖」运营主体）</span>
-      <span>工厂老板抖音获客代运营 · GEO 让AI也推荐你</span>
+  <footer class="footer" style="background:#0b1120;color:#9aa6b6;padding:44px 0 30px;font-size:.9rem">
+    <div style="max-width:1100px;margin:0 auto;padding:0 20px;display:flex;flex-wrap:wrap;gap:28px;align-items:start;justify-content:space-between">
+      <div style="display:flex;gap:14px;align-items:center;flex:1 1 280px">
+        <img src="images/brand-visual.png" alt="若云科技品牌视觉" style="width:56px;height:56px;border-radius:12px;object-fit:cover" />
+        <div>
+          <div style="color:#fff;font-weight:700;font-size:1rem">东莞市若云科技有限公司</div>
+          <div style="color:#9aa6b6;font-size:.82rem;margin-top:3px">工厂抖音获客代运营 · GEO 让 AI 也推荐你</div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;min-width:120px">
+        <a href="index.html" style="color:#c4cdda">首页</a>
+        <a href="company.html" style="color:#c4cdda">公司</a>
+        <a href="cases.html" style="color:#c4cdda">案例</a>
+        <a href="pricing.html" style="color:#c4cdda">价格</a>
+        <a href="news.html" style="color:#c4cdda">资讯</a>
+        <a href="articles/index.html" style="color:#c4cdda">文章</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px;min-width:200px">
+        <div>📱 微信 / 手机：15112850612</div>
+        <div>🎬 抖音：小赖还不赖</div>
+        <div>✉️ 邮箱：<a href="mailto:297388441@qq.com" style="color:#ff7a45;font-weight:600">297388441@qq.com</a></div>
+      </div>
+      <div style="flex-basis:100%;border-top:1px solid rgba(255,255,255,.08);padding-top:18px;margin-top:8px;font-size:.82rem;color:#6b7689">© <span id="year"></span> 东莞市若云科技有限公司（抖音「小赖还不赖」运营主体）</div>
     </div>
   </footer>
 
@@ -697,11 +716,19 @@
     document.querySelectorAll('.count').forEach(el=>co.observe(el));
     // 行业标签多选
     document.getElementById('tags').addEventListener('click',e=>{if(e.target.classList.contains('cta__tag'))e.target.classList.toggle('on');});
-    // 表单提交提示（静态 Demo 阶段）
+    // 留资表单 → 邮件到 297388441@qq.com
     document.getElementById('diagForm').addEventListener('submit',e=>{
       e.preventDefault();
-      alert('已收到你的信息。扫右边微信二维码加我，或手机 15112850612。把抖音号发我，24 小时内给你一份账号诊断。也欢迎扫抖音二维码先看内容。');
-      document.querySelector('.cta__qr').scrollIntoView({behavior:'smooth'});
+      const f=e.target, d=new FormData(f);
+      const name=(d.get('name')||'').toString().trim();
+      const wechat=(d.get('wechat')||'').toString().trim();
+      const industry=(d.get('industry')||'').toString().trim();
+      const pain=(d.get('pain')||'').toString().trim();
+      if(!name||!wechat){alert('请填写称呼和联系方式，方便我们联系你');return;}
+      const subject='【官网留资】'+name+(industry?'（'+industry+'）':'');
+      const body='称呼：'+name+'\n联系方式：'+wechat+'\n行业：'+industry+'\n获客卡点：'+pain;
+      location.href='mailto:297388441@qq.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+      alert('已为你打开邮件窗口，点「发送」即可把需求发给若云科技，我们会主动联系你。\n也可直接加微信「小赖还不赖」/ 手机 15112850612。');
     });
   </script>
 </body>

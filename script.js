@@ -58,3 +58,23 @@
   }, { threshold: 0.5 });
   nums.forEach(function (n) { io.observe(n); });
 })();
+
+// 全站留资表单 → 邮件到 297388441@qq.com
+(function () {
+  var EMAIL = '297388441@qq.com';
+  document.querySelectorAll('.site-contact-form').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var d = new FormData(form);
+      var name = (d.get('name') || '').toString().trim();
+      var contact = (d.get('contact') || '').toString().trim();
+      var industry = (d.get('industry') || '').toString().trim();
+      var pain = (d.get('pain') || '').toString().trim();
+      if (!name || !contact) { alert('请填写称呼和联系方式，方便我们联系你'); return; }
+      var subject = '【官网留资】' + name + (industry ? '（' + industry + '）' : '');
+      var body = '称呼：' + name + '\n联系方式：' + contact + '\n行业：' + industry + '\n获客卡点：' + pain;
+      window.location.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      alert('已为你打开邮件窗口，点「发送」即可把需求发给若云科技，我们会主动联系你。\n也可直接加微信「小赖还不赖」/ 手机 15112850612。');
+    });
+  });
+})();

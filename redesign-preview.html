@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>东莞市若云科技有限公司 | 工厂抖音获客代运营 + GEO 让AI也推荐你</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --navy:#0a1f44;
+      --navy-2:#0d2b5e;
+      --navy-3:#13356f;
+      --ink:#0e1726;
+      --paper:#f6f8fc;
+      --line:#e6ebf3;
+      --orange:#ff6a13;
+      --orange-2:#ff8a3d;
+      --text:#1a2436;
+      --muted:#5b6b80;
+      --white:#fff;
+      --radius:16px;
+      --maxw:1160px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:'Inter',-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;
+      color:var(--text);background:var(--white);line-height:1.7;
+      -webkit-font-smoothing:antialiased;
+    }
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+    a{color:inherit;text-decoration:none}
+    h1,h2,h3{line-height:1.2;font-weight:900;letter-spacing:-.01em}
+
+    /* 通用按钮 */
+    .btn{display:inline-block;padding:15px 30px;border-radius:999px;font-weight:800;font-size:16px;transition:.25s;cursor:pointer;border:0}
+    .btn--primary{background:linear-gradient(135deg,var(--orange),var(--orange-2));color:#fff;box-shadow:0 10px 30px rgba(255,106,19,.35)}
+    .btn--primary:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(255,106,19,.45)}
+    .btn--lg{padding:18px 40px;font-size:18px}
+    .btn--ghost{background:transparent;border:2px solid rgba(255,255,255,.4);color:#fff}
+    .btn--ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+
+    /* 导航 */
+    .nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(10,31,68,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav__inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .nav__logo{font-size:22px;font-weight:900;color:#fff}
+    .nav__logo span{color:var(--orange)}
+    .nav__menu{display:flex;gap:26px;align-items:center}
+    .nav__menu a{color:rgba(255,255,255,.82);font-weight:600;font-size:15px;transition:.2s}
+    .nav__menu a:hover{color:#fff}
+    .nav__cta{background:var(--orange);color:#fff!important;padding:9px 18px;border-radius:999px;font-weight:800}
+    .nav__cta:hover{background:var(--orange-2)}
+
+    /* Hero 深色区 */
+    .hero{position:relative;background:
+        radial-gradient(1200px 600px at 80% -10%,rgba(255,106,19,.18),transparent 60%),
+        linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 55%,var(--navy-3) 100%);
+      color:#fff;padding:150px 0 90px;overflow:hidden}
+    .hero::after{content:"";position:absolute;right:-120px;top:-80px;width:480px;height:480px;
+      background:radial-gradient(circle,rgba(255,106,19,.22),transparent 65%);filter:blur(8px)}
+    .hero__eyebrow{display:inline-block;font-size:14px;font-weight:700;letter-spacing:.06em;color:var(--orange-2);
+      border:1px solid rgba(255,138,61,.4);padding:7px 16px;border-radius:999px;margin-bottom:24px}
+    .hero__title{font-size:clamp(40px,6.5vw,76px);font-weight:900;line-height:1.05;margin-bottom:26px}
+    .hero__title span{color:var(--orange);position:relative}
+    .hero__sub{font-size:clamp(16px,2.1vw,20px);color:rgba(255,255,255,.82);max-width:760px;margin-bottom:34px}
+    .hl{color:var(--orange-2);font-weight:800}
+    .hero__actions{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:46px}
+    .hero__trust{display:flex;gap:14px;flex-wrap:wrap;list-style:none}
+    .hero__trust li{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);
+      padding:10px 18px;border-radius:10px;font-size:14px;font-weight:600;color:rgba(255,255,255,.9)}
+
+    /* 数据锚放大条 */
+    .stats{background:var(--navy);color:#fff;padding:0 0 70px;margin-top:-1px}
+    .stats__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .stat{background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.02));
+      border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:34px 28px;text-align:center}
+    .stat__num{font-size:clamp(48px,7vw,72px);font-weight:900;color:#fff;line-height:1}
+    .stat__num .u{font-size:.4em;color:var(--orange);font-weight:800;margin-left:4px}
+    .stat p{margin-top:12px;color:rgba(255,255,255,.72);font-size:15px;font-weight:600}
+
+    /* 通用区块 */
+    .section{padding:90px 0}
+    .section--alt{background:var(--paper)}
+    .section__title{font-size:clamp(28px,4vw,42px);font-weight:900;text-align:center;margin-bottom:14px}
+    .section__title--left{text-align:left}
+    .section__lead{text-align:center;color:var(--muted);font-size:17px;max-width:680px;margin:0 auto 48px}
+
+    /* 痛点卡片 */
+    .grid{display:grid;gap:22px}
+    .grid--4{grid-template-columns:repeat(4,1fr)}
+    .grid--2{grid-template-columns:repeat(2,1fr)}
+    .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;transition:.25s}
+    .card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(13,43,94,.1);border-color:rgba(255,106,19,.35)}
+    .card__icon{font-size:34px;margin-bottom:14px}
+    .card h3{font-size:20px;margin-bottom:10px;color:var(--navy)}
+    .card p{color:var(--muted);font-size:15px}
+
+    /* 服务 01-04 */
+    .service{background:#fff;border:1px solid var(--line);border-left:5px solid var(--orange);
+      border-radius:var(--radius);padding:32px 30px;transition:.25s}
+    .service:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(13,43,94,.1)}
+    .service__no{font-size:46px;font-weight:900;color:rgba(255,106,19,.18);display:block;line-height:1;margin-bottom:8px}
+    .service h3{font-size:24px;margin-bottom:10px;color:var(--navy)}
+    .service p{color:var(--muted);font-size:15px}
+
+    /* 原则三列 */
+    .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .principle{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px}
+    .principle h3{font-size:20px;color:var(--navy);margin-bottom:12px}
+    .principle p{color:var(--muted);font-size:15px}
+
+    /* 关于 */
+    .about{display:grid;grid-template-columns:1.4fr 1fr;gap:50px;align-items:center}
+    .about p{color:var(--text);margin-bottom:16px;font-size:16px}
+    .about__note{background:rgba(255,106,19,.08);border-left:4px solid var(--orange);padding:14px 18px;border-radius:8px;font-weight:600;color:var(--navy)}
+    .about__company{font-size:14px;color:var(--muted)}
+    .about__company a{color:var(--orange);font-weight:700}
+    .about__side{display:grid;gap:18px}
+    .stat--side{background:linear-gradient(160deg,var(--navy),var(--navy-2));color:#fff;border-radius:var(--radius);padding:28px;text-align:center}
+    .stat--side .stat__num{color:#fff}
+    .stat--side .stat__num .u{color:var(--orange)}
+    .stat--side p{color:rgba(255,255,255,.78);margin-top:8px;font-size:14px;font-weight:600}
+
+    /* 四大入口 */
+    .entry-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+    .entry-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 20px;text-align:center;transition:.25s}
+    .entry-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(13,43,94,.1);border-color:rgba(255,106,19,.35)}
+    .entry-card .ico{font-size:34px;margin-bottom:10px}
+    .entry-card h3{font-size:17px;color:var(--navy);margin-bottom:8px}
+    .entry-card p{font-size:13px;color:var(--muted)}
+
+    /* CTA 询问表单 */
+    .cta{background:linear-gradient(160deg,var(--navy),var(--navy-3));color:#fff;padding:90px 0}
+    .cta__inner{max-width:720px;margin:0 auto;text-align:center}
+    .cta h2{font-size:clamp(28px,4vw,40px);margin-bottom:14px}
+    .cta p{color:rgba(255,255,255,.8);font-size:17px;margin-bottom:32px}
+    .cta__form{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:28px;display:grid;gap:14px}
+    .cta__form input,.cta__form textarea{width:100%;padding:14px 16px;border-radius:10px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.05);color:#fff;font-size:15px;font-family:inherit}
+    .cta__form input::placeholder,.cta__form textarea::placeholder{color:rgba(255,255,255,.5)}
+    .cta__form input:focus,.cta__form textarea:focus{outline:none;border-color:var(--orange)}
+    .cta__contacts{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:28px}
+    .contact-chip{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);padding:10px 16px;border-radius:999px;font-size:14px;font-weight:600}
+
+    /* 页脚 */
+    .footer{background:var(--ink);color:rgba(255,255,255,.6);padding:30px 0;font-size:14px}
+    .footer__inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+    /* 响应式 */
+    @media(max-width:920px){
+      .grid--4{grid-template-columns:repeat(2,1fr)}
+      .principles{grid-template-columns:1fr}
+      .about{grid-template-columns:1fr;gap:30px}
+      .entry-grid{grid-template-columns:repeat(2,1fr)}
+      .nav__menu{display:none}
+    }
+    @media(max-width:560px){
+      .grid--4,.grid--2,.entry-grid{grid-template-columns:1fr}
+      .stats__grid{grid-template-columns:1fr}
+      .hero{padding:120px 0 70px}
+      .section{padding:64px 0}
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">若云<span>科技</span></a>
+      <nav class="nav__menu">
+        <a href="#home">首页</a>
+        <a href="#pain">痛点</a>
+        <a href="#services">服务</a>
+        <a href="cases.html">案例</a>
+        <a href="pricing.html">价格</a>
+        <a href="news.html">资讯</a>
+        <a href="articles/index.html">文章</a>
+        <a href="company.html">公司</a>
+        <a href="#about">关于</a>
+        <a href="#contact" class="nav__cta">联系我</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero 深色 -->
+    <section class="hero" id="home">
+      <div class="container">
+        <span class="hero__eyebrow">东莞市若云科技有限公司 · 工厂抖音获客代运营 + GEO 优化</span>
+        <h1 class="hero__title">工厂老板的抖音，<br />不是拍视频，<span>是搞客户</span>。</h1>
+        <p class="hero__sub">东莞市若云科技有限公司，专注工厂及实体老板抖音获客代运营。主理人赖先生有三年制造业实战、亲手操盘 18 家制造业客户，帮你把抖音做成<span class="hl">获客渠道</span>——而且不止抖音，连豆包、DeepSeek 这些 AI 搜你的时候，也得把你推出来。</p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">免费诊断我的账号</a>
+          <a href="articles/geo-shi-me-shi.html" class="btn btn--ghost">什么是 GEO？</a>
+        </div>
+        <ul class="hero__trust">
+          <li>3年实战经历</li>
+          <li>18家制造业实操</li>
+          <li>工厂获客方向</li>
+          <li>常驻东莞</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 数据锚放大 -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stat">
+            <div class="stat__num">3<span class="u">年</span></div>
+            <p>制造业获客实战</p>
+          </div>
+          <div class="stat">
+            <div class="stat__num">18<span class="u">家</span></div>
+            <p>制造业实操客户</p>
+          </div>
+          <div class="stat">
+            <div class="stat__num">100<span class="u">%</span></div>
+            <p>对获客结果负责</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 痛点 -->
+    <section class="section" id="pain">
+      <div class="container">
+        <h2 class="section__title">你是不是也卡在这些地方？</h2>
+        <p class="section__lead">很多工厂老板拍抖音，流量有、客户没有。问题通常出在这几处：</p>
+        <div class="grid grid--4">
+          <article class="card">
+            <div class="card__icon">📉</div>
+            <h3>拍了一堆没人看</h3>
+            <p>内容自嗨、没戳中采购决策者，发出去就石沉大海。</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🔍</div>
+            <h3>有流量没线索</h3>
+            <p>播放不差，但没人私信、没人问价，流量变不了客户。</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🆕</div>
+            <h3>0粉新号不会打</h3>
+            <p>从零开始没标签没权重，不知道第一支该拍什么。</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🔁</div>
+            <h3>代运营只交片子</h3>
+            <p>乙方按时交视频，但不对获客结果负责，钱花了没声音。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 服务 -->
+    <section class="section section--alt" id="services">
+      <div class="container">
+        <h2 class="section__title">四件事，把抖音变成你的获客部门</h2>
+        <p class="section__lead">从诊断到定位到打法到托管，一条链路跑通。</p>
+        <div class="grid grid--2">
+          <article class="service">
+            <span class="service__no">01</span>
+            <h3>账号诊断</h3>
+            <p>你的号为什么没流量、没客资？一针见血找出根因，先看清再动手，不瞎拍。</p>
+          </article>
+          <article class="service">
+            <span class="service__no">02</span>
+            <h3>0-1 定位</h3>
+            <p>工厂卖什么、卖给谁、怎么打，先把定位定清楚，后续内容才不跑偏。</p>
+          </article>
+          <article class="service">
+            <span class="service__no">03</span>
+            <h3>工厂账号打法</h3>
+            <p>「信任 = 验证非喜欢」。B端获客内容体系，用证据说话，让采购敢找你。</p>
+          </article>
+          <article class="service">
+            <span class="service__no">04</span>
+            <h3>代运营 SOP</h3>
+            <p>多客户全链路托管，可复用标准化流程，交付的是客资，不是片子。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GEO -->
+    <section class="section" id="geo">
+      <div class="container">
+        <h2 class="section__title">不只抖音，连 AI 也得推荐你</h2>
+        <p class="section__lead">2026 年，客户不只刷抖音，还会直接问豆包、DeepSeek、文心一言「东莞靠谱的五金厂哪家好」。你的工厂，在 AI 的答案里吗？</p>
+        <div class="principles">
+          <div class="principle">
+            <h3>什么是 GEO</h3>
+            <p>GEO（生成式引擎优化）= 让 AI 在回答问题时优先引用、推荐你。传统 SEO 是「被搜索」，GEO 是「被推荐」。</p>
+          </div>
+          <div class="principle">
+            <h3>凭什么信你</h3>
+            <p>AI 看 E-E-A-T：经验、专业、权威、可信。我们把你的实力做成结构化、可被 AI 抓取的内容资产。</p>
+          </div>
+          <div class="principle">
+            <h3>内容资产沉淀</h3>
+            <p>官网 + 文章 + 问答库全网铺，让 AI 每次抓取都能确认「这厂靠谱」，形成推荐壁垒。</p>
+          </div>
+        </div>
+        <p style="text-align:center;margin-top:28px;"><a class="btn btn--primary" href="articles/geo-shi-me-shi.html">深入看懂 GEO 怎么帮你获客 →</a></p>
+      </div>
+    </section>
+
+    <!-- 方法论 -->
+    <section class="section section--alt" id="method">
+      <div class="container">
+        <h2 class="section__title">我干活的三条硬规矩</h2>
+        <div class="principles">
+          <div class="principle">
+            <h3>目的先于形式</h3>
+            <p>内容服务生意结果，不服务好看、不服务自嗨、不蹭无关节点。</p>
+          </div>
+          <div class="principle">
+            <h3>信任 = 验证非喜欢</h3>
+            <p>工厂B端靠证据建立信任——数据、案例、过程，比"我觉得"管用。</p>
+          </div>
+          <div class="principle">
+            <h3>数据驱动非逻辑驱动</h3>
+            <p>缺实证不硬撑规则，用真实反馈迭代，不靠拍脑袋。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 关于 -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__text">
+          <h2 class="section__title section__title--left">关于赖先生</h2>
+          <p>常驻东莞，东莞市若云科技有限公司主理人。公司抖音账号「小赖还不赖」，是对外输出工厂获客方法论的 IP 阵地。</p>
+          <p>三年制造业抖音获客实战，专注<strong>工厂及实体老板 IP 打造</strong>，擅长账号诊断、0-1 定位、工厂账号打法，以及用 GEO 让 AI 也推荐你的工厂。</p>
+          <p>独立编导 / 代运营（工厂获客方向），累计操盘 <strong>18 家制造业客户</strong>，正在搭建可复用的多客户代运营 SOP 全链路。</p>
+          <p class="about__note">你看到的不是"会拍视频的人"，是"帮你把视频和 AI 搜索都变成订单的人"。</p>
+          <p class="about__company">运营主体：<a href="company.html">东莞市若云科技有限公司</a> · 专注工厂抖音获客代运营与 GEO 优化服务。</p>
+        </div>
+        <aside class="about__side">
+          <div class="stat--side">
+            <div class="stat__num">3<span class="u">年</span></div>
+            <p>制造业获客实战</p>
+          </div>
+          <div class="stat--side">
+            <div class="stat__num">18<span class="u">家</span></div>
+            <p>制造业实操客户</p>
+          </div>
+          <div class="stat--side">
+            <div class="stat__num">100<span class="u">%</span></div>
+            <p>对获客结果负责</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 四大入口 -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">往深了看：案例 / 价格 / 资讯 / 干货</h2>
+        <p class="section__lead">不光一个官网，这是一套能持续获客的内容矩阵。</p>
+        <div class="entry-grid">
+          <a class="entry-card" href="cases.html"><div class="ico">🏭</div><h3>各行业案例</h3><p>模具、五金、机械、包装、电子、食品… 不同行业的获客打法。</p></a>
+          <a class="entry-card" href="pricing.html"><div class="ico">💰</div><h3>服务与价格</h3><p>基础 / 标准 / 全案三档代运营，怎么选不踩坑。</p></a>
+          <a class="entry-card" href="news.html"><div class="ico">📰</div><h3>行业资讯</h3><p>制造业获客、抖音算法、GEO 动态，持续更新。</p></a>
+          <a class="entry-card" href="articles/index.html"><div class="ico">📚</div><h3>干货文章</h3><p>从0起号到被AI推荐，按意图词全覆盖的问答库。</p></a>
+          <a class="entry-card" href="company.html"><div class="ico">🏢</div><h3>公司介绍</h3><p>东莞市若云科技有限公司，工厂获客代运营与 GEO 服务主体。</p></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA 询问表单 -->
+    <section class="cta" id="contact">
+      <div class="container cta__inner">
+        <h2>想看看你的账号问题出在哪？</h2>
+        <p>留个信息，我先免费帮你把账号诊断一遍，有用你再考虑合作。</p>
+        <form class="cta__form" onsubmit="return false;">
+          <input type="text" placeholder="你的称呼 / 工厂名称" />
+          <input type="text" placeholder="微信或手机号" />
+          <input type="text" placeholder="行业（如：五金 / 机械 / 包装）" />
+          <textarea rows="3" placeholder="一句话说下你现在的获客卡点"></textarea>
+          <button class="btn btn--primary btn--lg" type="submit">免费诊断我的账号</button>
+        </form>
+        <div class="cta__contacts">
+          <span class="contact-chip">📱 微信 / 手机：15112850612</span>
+          <span class="contact-chip">🎬 抖音：小赖还不赖</span>
+          <span class="contact-chip">📍 广东 · 东莞</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© 2026 东莞市若云科技有限公司（抖音「小赖还不赖」运营主体）</span>
+      <span>工厂老板抖音获客代运营 · GEO 让AI也推荐你</span>
+    </div>
+  </footer>
+</body>
+</html>

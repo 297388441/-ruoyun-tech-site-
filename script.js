@@ -78,3 +78,16 @@
     });
   });
 })();
+
+// 点击"联系我"弹出微信二维码
+(function(){
+  var modal = document.getElementById('wechatModal');
+  if(!modal) return;
+  function openM(){ modal.classList.add('open'); modal.setAttribute('aria-hidden','false'); }
+  function closeM(){ modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); }
+  document.querySelectorAll('[data-wechat]').forEach(function(btn){
+    btn.addEventListener('click', function(e){ e.preventDefault(); openM(); });
+  });
+  modal.querySelectorAll('[data-close]').forEach(function(el){ el.addEventListener('click', closeM); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeM(); });
+})();

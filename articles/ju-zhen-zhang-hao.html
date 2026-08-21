@@ -29,7 +29,7 @@
       <a href="../pricing.html">价格</a>
       <a href="../news.html">资讯</a>
       <a href="../articles/index.html">文章</a>
-      <a href="../index.html#contact" class="nav__cta">免费诊断</a>
+      <a data-wechat class="nav__cta">联系我</a>
     </nav>
   </div>
 </header>
@@ -132,5 +132,17 @@
     </div>
   </footer>
   <script src="../script.js"></script>
+  <!-- 微信二维码弹窗 -->
+  <div class="qr-modal" id="wechatModal" aria-hidden="true">
+    <div class="qr-modal__mask" data-close></div>
+    <div class="qr-modal__box">
+      <button class="qr-modal__close" data-close aria-label="关闭">×</button>
+      <div class="qr-modal__title">扫码加我微信</div>
+      <div class="qr-modal__name">小赖还不赖</div>
+      <img class="qr-modal__img" src="../images/wechat-qr.jpg" alt="微信二维码：小赖还不赖" />
+      <p class="qr-modal__tip">加我微信，把抖音号发我，24 小时内给你一份免费账号诊断。</p>
+      <p class="qr-modal__alt">手机 / 微信同号：15112850612</p>
+    </div>
+  </div>
 </body>
 </html>

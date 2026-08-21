@@ -19,7 +19,7 @@
       <a href="../pricing.html">价格</a>
       <a href="../news.html">资讯</a>
       <a href="../articles/index.html">文章</a>
-      <a href="../index.html#contact" class="nav__cta">免费诊断</a>
+      <a data-wechat class="nav__cta">联系我</a>
     </nav>
   </div>
 </header>
@@ -326,5 +326,45 @@
     </div>
   </footer>
   <script src="../script.js"></script>
+<style>
+/* 微信二维码弹窗（点击"联系我"弹出） */
+.qr-modal{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:20px}
+.qr-modal.open{display:flex}
+.qr-modal__mask{position:absolute;inset:0;background:rgba(8,12,20,.72);backdrop-filter:blur(3px)}
+.qr-modal__box{position:relative;z-index:2;background:#fff;border-radius:20px;padding:28px 26px 24px;max-width:340px;width:100%;text-align:center;box-shadow:0 30px 80px rgba(0,0,0,.4);animation:qrpop .25s ease}
+@keyframes qrpop{from{transform:translateY(12px) scale(.96);opacity:0}to{transform:none;opacity:1}}
+.qr-modal__close{position:absolute;top:10px;right:14px;width:34px;height:34px;border:0;background:#f2f4f8;border-radius:50%;font-size:22px;line-height:1;color:#5b6b80;cursor:pointer}
+.qr-modal__close:hover{background:#e6e9f0}
+.qr-modal__title{font-size:18px;font-weight:800;color:#1f2d3d}
+.qr-modal__name{display:inline-block;margin:6px 0 14px;background:linear-gradient(135deg,#ff6a00,#ff9d2e);color:#fff;font-weight:800;padding:5px 16px;border-radius:999px;font-size:15px}
+.qr-modal__img{width:200px;max-width:70%;border-radius:12px;display:block;margin:0 auto;border:1px solid #eee}
+.qr-modal__tip{font-size:13px;color:#5b6b80;margin-top:14px;line-height:1.6}
+.qr-modal__alt{font-size:13px;color:#1f2d3d;font-weight:700;margin-top:8px}
+</style>
+  <!-- 微信二维码弹窗 -->
+  <div class="qr-modal" id="wechatModal" aria-hidden="true">
+    <div class="qr-modal__mask" data-close></div>
+    <div class="qr-modal__box">
+      <button class="qr-modal__close" data-close aria-label="关闭">×</button>
+      <div class="qr-modal__title">扫码加我微信</div>
+      <div class="qr-modal__name">小赖还不赖</div>
+      <img class="qr-modal__img" src="../images/wechat-qr.jpg" alt="微信二维码：小赖还不赖" />
+      <p class="qr-modal__tip">加我微信，把抖音号发我，24 小时内给你一份免费账号诊断。</p>
+      <p class="qr-modal__alt">手机 / 微信同号：15112850612</p>
+    </div>
+  </div>
+<script>
+// 点击"联系我"弹出微信二维码
+(function(){
+  var modal = document.getElementById('wechatModal');
+  if(!modal) return;
+  function openM(){ modal.classList.add('open'); modal.setAttribute('aria-hidden','false'); }
+  function closeM(){ modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); }
+  document.querySelectorAll('[data-wechat]').forEach(function(btn){
+    btn.addEventListener('click', function(e){ e.preventDefault(); openM(); });
+  });
+  modal.querySelectorAll('[data-close]').forEach(function(el){ el.addEventListener('click', closeM); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeM(); });
+})();</script>
 </body>
 </html>

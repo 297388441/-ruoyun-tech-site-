@@ -163,5 +163,20 @@
       <p class="qr-modal__alt">手机 / 微信同号：15112850612</p>
     </div>
   </div>
+
+  <!-- Baidu auto-push (普通收录-自动推送): 访客访问即自动提交当前URL, 不占API配额 -->
+  <script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      } else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+  </script>
 </body>
 </html>

@@ -376,5 +376,20 @@
   modal.querySelectorAll('[data-close]').forEach(function(el){ el.addEventListener('click', closeM); });
   document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeM(); });
 })();</script>
+
+  <!-- Baidu auto-push (普通收录-自动推送): 访客访问即自动提交当前URL, 不占API配额 -->
+  <script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      } else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+  </script>
 </body>
 </html>

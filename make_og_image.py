@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw, ImageFont
 import os
 
 SRC = "/Users/a123456/WorkBuddy/2026-08-11-00-08-08/site/images/brand-visual.png"
-OUT = "/Users/a123456/WorkBuddy/2026-08-11-00-08-08/site/images/ruoyun-og-v2.png"
+OUT = "/Users/a123456/WorkBuddy/2026-08-11-00-08-08/site/images/ruoyun-og-v3.png"
 FONT_PATH = "/System/Library/Fonts/Hiragino Sans GB.ttc"
 
 # 品牌色
@@ -56,7 +56,7 @@ def main():
     title = "东莞市若云科技有限公司"
     line1 = "抖音代运营 + 编导全案"
     line2 = "GEO 让AI也推荐你"
-    note = "抖音「小赖的运营笔记」运营主体"
+    note = "抖音「小赖还不赖」运营主体"
 
     x_left = 60
     y_title = 120

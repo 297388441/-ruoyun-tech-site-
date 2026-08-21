@@ -384,5 +384,5 @@ a.contact-chip:hover { background: rgba(255,255,255,.24); }
 
 .qr-modal__qrs{display:flex;gap:14px;justify-content:center;margin:2px 0 4px;flex-wrap:wrap}
 .qr-modal__qr{display:flex;flex-direction:column;align-items:center;gap:6px}
-.qr-modal__qr img{width:128px;max-width:40vw;border-radius:12px;border:1px solid #eee}
+.qr-modal__qr img{width:128px;max-width:40vw;height:auto;border-radius:12px;border:1px solid #eee}
 .qr-modal__qr span{font-size:13px;font-weight:700;color:#1f2d3d}

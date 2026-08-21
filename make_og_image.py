@@ -4,7 +4,7 @@
 from PIL import Image, ImageDraw, ImageFont
 import os
 
-SRC = "/Users/a123456/WorkBuddy/2026-08-11-00-08-08/site/images/Professional_B2B_digital_marke_2026-08-21T13-43-00.png"
+SRC = "/Users/a123456/WorkBuddy/2026-08-11-00-08-08/site/images/brand-visual.png"
 OUT = "/Users/a123456/WorkBuddy/2026-08-11-00-08-08/site/images/ruoyun-og-2026.png"
 FONT_PATH = "/System/Library/Fonts/Hiragino Sans GB.ttc"
 
@@ -24,10 +24,11 @@ def main():
     w, h = img.size
     print(f"源图尺寸: {w}x{h}")
 
-    # 目标 1200x630 (1.91:1)。源图 1536x1024，先按目标比例从顶部裁切，排除底部水印。
+    # 目标 1200x630 (1.91:1)。源图 1024x1024，按目标比例居中裁切，排除右下角水印。
     target_ratio = 1200 / 630  # ≈1.9048
-    crop_h = int(w / target_ratio)  # 1536 / 1.9048 ≈ 806
-    crop_box = (0, 0, w, crop_h)
+    crop_h = int(w / target_ratio)  # 1024 / 1.9048 ≈ 537
+    crop_y = (h - crop_h) // 2 - 60  # 稍微上移，保留中心光芒与齿轮
+    crop_box = (0, crop_y, w, crop_y + crop_h)
     cropped = img.crop(crop_box)
     print(f"裁切区域: {crop_box}")
 
@@ -53,7 +54,7 @@ def main():
 
     # 文字内容
     title = "东莞市若云科技有限公司"
-    line1 = "工厂抖音获客代运营"
+    line1 = "抖音代运营 + 编导全案"
     line2 = "GEO 让AI也推荐你"
     note = "抖音「小赖的运营笔记」运营主体"
 

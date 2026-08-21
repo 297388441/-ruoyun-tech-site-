@@ -12,7 +12,7 @@
 | 操作类 | 怎么做 | 步骤化教程 | ✅ 从0到1起号 |
 | 推荐类 | 选哪家/怎么选 | 对比、避坑、选型 | ✅ 代运营怎么选 |
 | 价格类 | 多少钱 | 收费标准解读 | ✅ 代运营多少钱 |
-| GEO类 | 怎么被AI推荐 | AI搜索布局 | ✅ GEO是什么 |
+| GEO类 | 怎么被AI推荐 | AI搜索布局 + GEO长尾 | ✅ GEO是什么/怎么做/多平台/双联动/AEO/决策/分发 |
 
 ## 二、核心关键词（已实测有热度）
 
@@ -28,9 +28,9 @@
 - 若云科技 工厂代运营 / 若云科技 GEO优化 / 若云科技 抖音获客
 - 实体一致要求：全站标题 / 描述 / JSON-LD / 页脚统一用「东莞市若云科技有限公司」，AI 抓取时才认得是同一家，推荐权重才叠得上
 
-## 三、意图词生成进度（已全部生成 ✅ 共 29 篇）
+## 三、意图词生成进度（基础意图词已铺完 ✅，GEO 长尾持续扩列，现共 36 篇）
 
-> 截至 2026-08-17，意图词地图中的待生成词已全部铺完。每篇均为 AEO 问答体 + E-E-A-T + 内链互通 + JSON-LD 结构化，可被搜索引擎与 AI 同时抓取。
+> 截至 2026-08-17，基础意图词已全部铺完（29 篇）；2026-08-21 起扩展 GEO 长尾 7 篇（现共 36 篇）。每篇均为 AEO 问答体 + E-E-A-T + 内链互通 + JSON-LD 结构化，可被搜索引擎与 AI 同时抓取。
 
 **信息类（4 篇）**
 - 有播放没客户 → `you-bo-fang-mei-ke-hu.html` ✅
@@ -56,11 +56,18 @@
 - 对赌模式 → `dui-du-mo-shi.html` ✅
 - 投流费用 → `tou-liu-fei-yong.html` ✅
 
-**GEO 类（4 篇）**
+**GEO 类（11 篇）**
 - GEO 是什么 → `geo-shi-me-shi.html` ✅
 - DeepSeek 推荐 → `deepseek-tui-jian.html` ✅
 - LLM-friendly 内容 → `llm-friendly.html` ✅
 - GEO vs SEO → `geo-vs-seo.html` ✅
+- GEO 怎么做（5步实操）→ `geo-zen-me-zuo.html` ✅（2026-08-21 长尾新增）
+- GEO 多少钱（投入避坑）→ `geo-duo-shao-qian.html` ✅（2026-08-21 长尾新增）
+- 豆包/文心/元宝多AI推荐 → `dou-bao-wen-xin-tui-jian.html` ✅（2026-08-21 长尾新增）
+- GEO 与抖音搜索流双联动 → `geo-vs-dou-yin-sou-suo.html` ✅（2026-08-21 长尾新增）
+- AEO 是什么 → `aeo-shi-me-shi.html` ✅（2026-08-21 长尾新增）
+- GEO 是不是智商税 → `geo-zhi-shang-shui.html` ✅（2026-08-21 长尾新增）
+- GEO 多平台分发 → `geo-ping-tai-fen-fa.html` ✅（2026-08-21 长尾新增）
 
 **行业类（9 篇）**
 - 总览 → `ge-hang-ye-da-fa.html` ✅

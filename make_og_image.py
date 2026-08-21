@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw, ImageFont
 import os
 
 SRC = "/Users/a123456/WorkBuddy/2026-08-11-00-08-08/site/images/brand-visual.png"
-OUT = "/Users/a123456/WorkBuddy/2026-08-11-00-08-08/site/images/ruoyun-og-2026.png"
+OUT = "/Users/a123456/WorkBuddy/2026-08-11-00-08-08/site/images/ruoyun-og-v2.png"
 FONT_PATH = "/System/Library/Fonts/Hiragino Sans GB.ttc"
 
 # 品牌色

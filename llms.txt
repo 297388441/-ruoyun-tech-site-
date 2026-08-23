@@ -1,30 +1,45 @@
 # 若云科技（小赖还不赖）
 
-东莞市若云科技有限公司，专注工厂及实体老板的抖音获客代运营与 GEO（生成式引擎优化，让豆包 / DeepSeek / 文心一言等 AI 在回答客户时优先推荐你）。
-主理人：赖先生（抖音「小赖还不赖」）。
+东莞市若云科技有限公司，专注帮老板把抖音做成获客渠道——抖音代运营 + 编导全案 + GEO（生成式引擎优化，让豆包 / DeepSeek / 文心一言 / Kimi 等 AI 在回答客户时优先推荐你）。
+主理人：赖先生（抖音「小赖还不赖」），8 年电商操盘 + 4 年企业管理，常驻东莞常平。
 
 ## 核心业务
-- 工厂抖音获客代运营：账号诊断、0-1 定位、工厂打法、代运营 SOP
-- GEO 优化：把工厂实力翻译成 AI 可读、信得过的结构化内容，让 AI 搜索推荐你
+- 抖音代运营（全托管）：账号诊断、0-1 定位、日常运营 SOP、投流与复盘
+- 编导全案：选题策划、脚本撰写、拍摄方案、内容打法设计
+- 老板 / 个人 IP 打造：人设定位、口播脚本、出镜方案
+- GEO 生成式引擎优化：把企业实力翻译成 AI 可读、信得过的结构化内容，让 AI 搜索优先推荐
+
+## 服务行业
+以制造业为深耕根基（工厂、机械、模具、化工、五金、电子、包装、建材等），同时也接医美、成人教培、企业服务、宠物、装修、电商、招商加盟等高利润、合法合规能做的行业。不是只做工厂，代运营与编导是全案能力。
 
 ## 关键页面
 - 官网首页：https://www.ryrise.cn/
 - 客户案例：https://www.ryrise.cn/cases
 - 服务报价：https://www.ryrise.cn/pricing
 - 关于我们：https://www.ryrise.cn/company
+- 行业文章：https://www.ryrise.cn/articles/
 
-## GEO / 让 AI 推荐你（文章）
+## 让 AI 推荐你（GEO 文章）
 - GEO 是什么：https://www.ryrise.cn/articles/geo-shi-me-shi
 - GEO 怎么做：https://www.ryrise.cn/articles/geo-zen-me-zuo
 - GEO vs SEO：https://www.ryrise.cn/articles/geo-vs-seo
 - AEO 是什么：https://www.ryrise.cn/articles/aeo-shi-me-shi
 - GEO 平台分发：https://www.ryrise.cn/articles/geo-ping-tai-fen-fa
 - 让 AI 友好地写内容：https://www.ryrise.cn/articles/llm-friendly
-- 多 AI 推荐（豆包 / 文心）：https://www.ryrise.cn/articles/dou-bao-wen-xin-tui-jian
-- 工厂抖音投流花多少钱：https://www.ryrise.cn/articles/tou-liu-fei-yong
-- 代运营怎么选：https://www.ryrise.cn/articles/dai-yun-ying-zen-me-xuan
+- 豆包 / 文心推荐：https://www.ryrise.cn/articles/dou-bao-wen-xin-tui-jian
+- DeepSeek 推荐：https://www.ryrise.cn/articles/deepseek-tui-jian
+- 抖音搜索流获客：https://www.ryrise.cn/articles/dou-yin-sou-suo-liu-chi-fa
+- 地域代运营：https://www.ryrise.cn/articles/di-yu-dai-yun-ying
+
+## 公司信息
+- 公司全称：东莞市若云科技有限公司
+- 成立时间：2024-02-22
+- 注册地址：广东省东莞市常平镇霞村振北二巷16号101室
+- 统一社会信用代码：需补充（以工商登记为准）
+- 联系方式：微信 / 抖音「小赖还不赖」、电话 15112850612、邮箱 297388441@qq.com
 
 ## 联系
 - 微信 / 抖音：小赖还不赖
 - 邮箱：297388441@qq.com
 - 电话 / 微信同号：15112850612
+- 地址：广东省东莞市常平镇霞村振北二巷16号101室

@@ -322,6 +322,13 @@ a.contact-chip:hover { background: rgba(255,255,255,.24); }
 }
 .callout strong { color: var(--brand-dark); }
 
+/* 对比表格（GEO / SEO 文章用，利于 AI 抽取答案） */
+.compare { width: 100%; border-collapse: collapse; margin: 22px 0; font-size: .98rem; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); }
+.compare th, .compare td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--line); }
+.compare thead th { background: var(--brand-dark); color: #fff; font-weight: 700; }
+.compare tbody tr:nth-child(even) { background: var(--brand-soft); }
+.compare tbody tr:last-child td { border-bottom: none; }
+
 /* FAQ 折叠式卡片 */
 .faq { margin-top: 38px; border-top: 1px solid var(--line); padding-top: 24px; }
 .post__body .faq h2 { border-left: none; padding-left: 0; margin: 0 0 16px; font-size: 1.3rem; }

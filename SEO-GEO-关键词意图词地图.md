@@ -69,7 +69,7 @@
 - GEO 是不是智商税 → `geo-zhi-shang-shui.html` ✅（2026-08-21 长尾新增）
 - GEO 多平台分发 → `geo-ping-tai-fen-fa.html` ✅（2026-08-21 长尾新增）
 
-**行业类（9 篇）**
+**行业类（11 篇）**
 - 总览 → `ge-hang-ye-da-fa.html` ✅
 - 模具/注塑 → `mu-ju.html` ✅
 - 五金冲压 → `wu-jin.html` ✅
@@ -79,6 +79,8 @@
 - 食品 → `shi-pin.html` ✅
 - 建材/家居 → `jian-cai.html` ✅
 - 化工/材料 → `hua-gong.html` ✅
+- 医美机构 → `yi-mei-dai-yun-ying.html` ✅（2026-09-28 新增，高利润行业）
+- 招商加盟 → `zhao-shang-jia-meng-dai-yun-ying.html` ✅（2026-09-28 新增，高利润行业）
 
 **后续可继续扩展（长尾）**
 - 各行业的"搜索流关键词"深挖（如"东莞模具厂哪家好"地域+行业长尾）
